@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="hr-HR">
   <head>
     <meta charset="utf-8" />
     <title>Outdoor Activities</title>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
   </head>
   <body>
-    <header>
-      <h1 class="heading-blue">Outdoor Activities</h1>
-    </header>
-    <main>
-      <div>
-        <figure>
-          <img src="./images/running.jpg" alt="Woman running" />
-          <h2>Running</h2>
-        </figure>
-        <figure>
-          <img src="./images/meditation.jpg" alt="Woman meditating" />
-          <h2>Meditation</h2>
-        </figure>
-        <figure>
-          <img src="./images/yoga.jpg" alt="Woman doing yoga" />
-          <h2>Yoga</h2>
-        </figure>
-        <figure>
-          <img src="./images/hiking.jpg" alt="Man hiking" />
-          <h2>Hiking</h2>
-        </figure>
-      </div>
-    </main>
-    <section>
-      <p>Images from <a href="https://unsplash.com/">Unsplash</a></p>
+    <section class="section section--primary">
+      <h1 class="title">Outdoor Activities</h1>
     </section>
-    <footer>
+    <section class="section section--secondary">
+      <div class="grid">
+        <div class="grid__item">
+          <div class="grid__wrap">
+            <img
+              class="grid__image"
+              src="./images/running.jpg"
+              alt="Woman running"
+            />
+          </div>
+          <label class="grid__label">Running</label>
+        </div>
+        <div class="grid__item">
+          <div class="grid__wrap">
+            <img
+              class="grid__image"
+              src="./images/meditation.jpg"
+              alt="Woman meditating"
+            />
+          </div>
+          <label class="grid__label">Meditation</label>
+        </div>
+        <div class="grid__item">
+          <div class="grid__wrap">
+            <img
+              class="grid__image"
+              src="./images/yoga.jpg"
+              alt="Woman doing yoga"
+            />
+          </div>
+          <label class="grid__label">Yoga</label>
+        </div>
+        <div class="grid__item">
+          <div class="grid__wrap">
+            <img
+              class="grid__image"
+              src="./images/hiking.jpg"
+              alt="Man hiking"
+            />
+          </div>
+          <label class="grid__label">Hiking</label>
+        </div>
+      </div>
+      <p class="source">
+        Images from
+        <a class="source__link" href="https://unsplash.com/">Unsplash</a>
+      </p>
+    </section>
+    <footer class="footer">
       <p>
-        <a href="">Website Templates</a>created with
-        <a href="">Website Builder Software</a>
+        <a class="footer__link" href="">Website Templates</a> created with
+        <a class="footer__link" href="">Website Builder Software</a>
       </p>
     </footer>
   </body>

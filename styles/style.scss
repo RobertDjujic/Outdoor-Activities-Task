@@ -1,63 +1,90 @@
 * {
   box-sizing: border-box;
-  text-align: center;
+  font-family: Oswald;
 }
 
-header {
-  background-color: #e5e5e5;
-  height: 425px;
-  .heading-blue {
-    color: #0ebbd0;
+$colorPrimary: rgb(14, 187, 208);
+
+.section {
+  &--primary {
+    background-color: rgb(229, 229, 229);
+    height: 30rem;
+  }
+  &--secondary {
+    background-color: $colorPrimary;
+    height: 20rem;
   }
 }
 
-img {
-  border: 3px solid #0ebbd0;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-top: -50px;
+.footer {
+  background-color: rgb(51, 51, 51);
+  height: 10rem;
 }
 
-div {
-  background-color: transparent;
+.title {
+  color: $colorPrimary;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+  transform: translate(0, 5rem);
+}
+
+.grid {
   display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: 1;
+  width: 60vw;
+  margin: 0 auto;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 25%;
+    height: 15rem;
+    margin-right: 2rem;
+    transform: translate(0, -6rem);
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__wrap {
+    border: 5px solid $colorPrimary;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    transform: translate(0, -5rem);
+  }
+  &__image {
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__label {
+    font-size: 2rem;
+    transform: translate(0, -3rem);
+  }
 }
 
-figure {
-  transform: translate(0, -70px);
-  background-color: #ffffff;
-  width: 200px;
-  height: 225px;
+.source,
+.footer {
+  font-size: 1.2rem;
 }
 
-section {
-  color: white;
+.source {
+  color: #fff;
+  text-align: center;
+  transform: translate(0, -2rem);
+  &__link {
+    color: #fff;
+  }
+}
+
+.footer {
+  color: #fff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0ebbd0;
-  height: 300px;
-  p {
-    margin-bottom: -150px;
+  &__link {
+    color: #6fa0d8;
   }
-  a:link {
-    color: white;
-    text-decoration: none;
-  }
-}
-
-footer {
-  color: white;
-  background-color: #333333;
-  height: 150px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
 }
